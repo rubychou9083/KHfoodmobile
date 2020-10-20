@@ -14,7 +14,8 @@
     <link rel="icon" href="im/491440538_m.jpg" sizes="60x60" type="image/x-icon">
     <link rel="shortcut icon" type="image/x-icon" href="im/1602594588.ico">
     <link rel="style" href="style.css">
-
+    <link rel="stylesheet" href="themes/ruby.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -38,14 +39,44 @@
             <p>介紹高雄超夯在地美食</p>
             
             
-
-            <br>
-            <center>
+            
+            <center> 
+           <br>
             <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D5"><a href="#page01">傳統小吃</button></a>
              
         <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D4"><a href="#page02">人氣美食</button></a>
               
-          </center></br>
+          
+            </div><!-- /content -->
+             <div data-role="main" class="ui-content">
+            <center>  
+                <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D4"><a href="#pagetwo">關於我們</button></a>
+            </center>
+                </br>
+              </div>
+            
+              <div data-role="footer" data-position="fixed">
+
+                <h4>chou&copy;ruby0960113068@gmail.com</h4>
+    
+            </div>
+              </div>
+            </div> 
+            
+            <div data-role="page" data-dialog="true" id="pagetwo">
+              <div data-role="header">
+                <h1>關於我們！</h1>
+              </div>
+            
+              <div data-role="main" class="ui-content">
+                <p>認真裝業負責的團隊，帶你吃遍高雄在地特色</p>
+                <a href="#page00">跳回主畫面</a>
+              </div>
+            
+              <div data-role="footer">
+                <h1>連絡電話:5988442369</h1>
+              </div>
+            </div> 
 
 
 
@@ -55,13 +86,10 @@
 
 
 
-        </div><!-- /content -->
 
-        <div data-role="footer" data-position="fixed">
 
-            <h4>chou&copy;ruby0960113068@gmail.com</h4>
 
-        </div><!-- /footer -->
+        <!-- /footer -->
 
     </div><!-- /page -->
 
@@ -70,36 +98,46 @@
 
     <!-- 第一分頁傳統小吃-->
     <div data-role="page" id="page01">
-
         <div data-role="header">
+       
+       
+        
+                  <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+                  <h1>美食介紹</h1>
+                  <a href="https://www.google.com/?hl=zh_tw" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">搜索</a>
+                </div>
+            
 
-            <h1>美食介紹</h1>
-
-        </div><!-- /header -->
+        <!-- /header -->
 
         <div role="main" class="ui-content">
            
             <h1>傳統小吃</h1>
             <p>關於傳統小吃，你一定要吃</p>
-            <ul>
-                <li><a href="#smelly">臭豆腐</a></li>
-                <li>雞排</li>
-                </ul>
-           
+              <br>  
+                 <a href="#smelly" class="ui-btn " data-transition="slide">臭豆腐</a> 
+                 <a href="#" class="ui-btn" data-transition="slide">雞排</a>
+                
+                
+                 
+              
+                   
+                 
           
 
-           <br>
-           <center>
-           <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D5"><a href="#page02">前往人氣美食</button></a>
-            
-       <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D4"><a href="#page00">返回首頁</button></a>
-             
-         </center></br>
+    
 
-           
+          <br>
+         <div data-role="navbar">
+            <ul>
+              <li><a href="#page00" data-icon="home">回到主畫面</a></li>
+              <li><a href="#page02" data-icon="arrow-r">前往人氣美食</a></li>
+          
+            </ul>
+          </div>     
 
         </div><!-- /content -->
-
+ </br>   
         <div data-role="footer" data-position="fixed">
 
             <h4>chou&copy;ruby0960113068@gmail.com</h4>
@@ -109,11 +147,17 @@
     </div><!-- /page -->
 
     <!-- 第二分頁人氣美食-->
+
+
     <div data-role="page" id="page02">
-
         <div data-role="header">
-
-            <h1>美食介紹</h1>
+                  <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+                  <h1>美食介紹</h1>
+                  <a href="https://www.google.com/?hl=zh_tw" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">搜索</a>
+                
+            
+   
+          
 
         </div><!-- /header -->
 
@@ -121,21 +165,34 @@
            
             <h1>人氣美食</h1>
             <p>知名各大媒體推薦</p>
+
+
+            <br>  
+                 <a href="#tea" class="ui-btn " data-transition="slide">珍珠奶茶</a> 
+                 <a href="#" class="ui-btn" data-transition="slide">生煎包</a>
+                
+                
+                 
+              
+                   
+                 
+          
+
+    
+
+        </br>
+        <div data-role="navbar">
             <ul>
-                <li><a href="#tea">珍珠奶茶</a></li>
-                <li>生煎包</li>
-                </ul>
+              <li><a href="#page00" data-icon="home">回到主畫面</a></li>
+              <li><a href="#page01" data-icon="arrow-r">前往傳統小吃</a></li>
+          
+            </ul>
+          </div>       
            
           
            
 
-               <br>
-               <center>
-               <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D5"><a href="#page00">返回首頁</button></a>
-                
-           <button type="button"style="width:200px;height:50px;font-size:20px;background-color:#FFF0D4"><a href="#page01">返回傳統小吃</button></a>
-                 
-             </center></br>
+             
 
 
 
